@@ -1,0 +1,21 @@
+<div class="form-container" (submit)="submit()">
+    <form [formGroup]="clientUpdateForm" fxLayout="column">
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput (value)="client.firstName" formControlName="firstName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput (value)="client.lastName" formControlName="lastName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput (value)="client.email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input matInput (value)="client.phoneNumber" formControlName="phoneNumber">
+        </mat-form-field>
+        <button mat-raised-button color="primary">Submit</button>
+    </form>
+</div>

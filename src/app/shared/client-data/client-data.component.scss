@@ -1,0 +1,20 @@
+.button-container {
+    button {
+        margin: 5px;
+    }
+}
+table {
+    th {
+        background-color: rgba(19,118,205,0.8);
+        color: #fff;
+        font-size: 16px;
+    }
+    tr:nth-child(even) {
+        background-color: #e7e7e7;
+    }
+}
+
+.clickable {
+    cursor: pointer;
+    color: rgba(19,118,205,0.8);
+}
